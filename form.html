@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Biểu mẫu (form)</h1>
+<!--Method: Quy định cách thức gửi dữ liệu-->
+<!--Method get đẩy dữ liệu lên thanh địa chỉ-->
+<!--Method post không đẩy dữ liệu lên thanh địa chỉ-->
+<!--action: quy định nơi được gửi dữ liệu-->
+<form action="index.html" method="post">
+  <label>name
+  <input type="text" placeholder="name" name="ten">
+  </label>
+  <br>
+  <label for="password">password</label>
+  <input type="password" id="password" name="matkhau" placeholder="passsword">
+  <br>
+  <label for="age">age</label>
+  <input type="number" id="age" placeholder="age" name="tuoi">
+  <br>
+  <label for="description">description</label>
+  <textarea rows="6" id="description"></textarea>
+  <select>
+    <option>Nam</option>
+    <option selected="selected">Nữ</option>
+    <option>Khác</option>
+  </select>
+<!--Gửi dữ liệu đi-->
+  <button type="submit">Create</button>
+<!--Xoá toàn bộ dữ liệu trong form-->
+  <button type="reset">Reset</button>
+</form>
+</body>
+</html>
